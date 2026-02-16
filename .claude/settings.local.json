@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node:*)",
+      "Bash(npm:*)",
+      "Bash(pnpm:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(gh repo create:*)",
+      "Bash(gh auth status:*)",
+      "Bash(npx create-next-app@latest:*)",
+      "Bash(npx drizzle-kit generate:*)",
+      "Bash(npx next build:*)"
+    ]
+  }
+}
