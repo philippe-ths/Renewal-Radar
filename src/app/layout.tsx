@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import Link from "next/link";
 import "./globals.css";
 
 const geistSans = localFont({
@@ -30,7 +31,9 @@ export default function RootLayout({
       >
         <header className="border-b">
           <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-            <h1 className="text-xl font-bold">Renewal Radar</h1>
+            <Link href="/" className="text-xl font-bold hover:opacity-80">
+              Renewal Radar
+            </Link>
           </div>
         </header>
         <main className="container mx-auto px-4 py-6">{children}</main>

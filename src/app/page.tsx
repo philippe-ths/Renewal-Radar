@@ -68,7 +68,7 @@ export default function DashboardPage({ searchParams }: PageProps) {
         </div>
         <div className="flex items-center gap-3">
           {isConnected ? (
-            <SyncButton />
+            <SyncButton lastSynced={token?.updatedAt} />
           ) : (
             <Link href="/api/gmail/connect">
               <Button>Connect Gmail</Button>
